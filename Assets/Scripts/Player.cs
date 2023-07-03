@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
     {
         isShooting = true;
 
-        Instantiate(BulletPrefab, transform.position, Quaternion.identity);
+        Instantiate(BulletPrefab, new Vector2(transform.position.x, transform.position.y + .5f), Quaternion.identity);
         yield return new WaitForSeconds(coolDown);
 
         isShooting = false;
