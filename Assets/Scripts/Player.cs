@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
 
     bool isShooting;
     float coolDown = 0.5f;
+    [SerializeField] private ObjectPool objectPool = null;
 
     private void Awake()
     {
@@ -48,7 +49,9 @@ public class Player : MonoBehaviour
     {
         isShooting = true;
 
-        Instantiate(BulletPrefab, new Vector2(transform.position.x, transform.position.y + .5f), Quaternion.identity);
+        // Instantiate(BulletPrefab, new Vector2(transform.position.x, transform.position.y + .5f), Quaternion.identity);
+        GameObject obj = objectPool.GetPoolObject();
+        obj.transform.position = gameObject.transform.position;
         yield return new WaitForSeconds(coolDown);
 
         isShooting = false;
