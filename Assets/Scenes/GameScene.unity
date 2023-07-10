@@ -204,8 +204,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPool: {fileID: 104815480}
+  motherShipObjectPool: {fileID: 312167206}
   bulletPrefab: {fileID: 83074293831566139, guid: 14d0831d542eb53a594bf4a1f94bfcc4, type: 3}
   _playerSc: {fileID: 2073365364}
+  motherShipPrefab: {fileID: 1751547097252937202, guid: 06cf73a4a8b52ed648493d4d28961960, type: 3}
 --- !u!114 &104815480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,8 +358,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 312167205}
+  - component: {fileID: 312167206}
   m_Layer: 0
-  m_Name: ObjectPool
+  m_Name: MothershipPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -378,6 +381,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &312167206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312167203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f0405cdabc5bd8f931aacbb7742dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPrefab: {fileID: 1751547097252937202, guid: 06cf73a4a8b52ed648493d4d28961960, type: 3}
+  poolSize: 1
 --- !u!1001 &312429507
 PrefabInstance:
   m_ObjectHideFlags: 0

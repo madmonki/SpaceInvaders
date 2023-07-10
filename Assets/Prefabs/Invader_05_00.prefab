@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7137469121927446225}
   - component: {fileID: 8826381626777234822}
   - component: {fileID: 4631270402370071186}
+  - component: {fileID: -5050587787317578802}
   m_Layer: 0
   m_Name: Invader_05_00
   m_TagString: Alien
@@ -152,3 +153,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5389164, y: 0.52996343}
   m_EdgeRadius: 0
+--- !u!114 &-5050587787317578802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3336112276558505945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f4558bf445771e1859e59a71e2e676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 0
+  explosion: {fileID: 1920170291376477665, guid: 635eb6d985755a03ab7a4cafb3b52741, type: 3}

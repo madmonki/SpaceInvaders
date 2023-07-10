@@ -6,6 +6,7 @@ using UnityEngine;
 public class AlienMaster : MonoBehaviour
 {
     [SerializeField] private ObjectPool objectPool = null;
+    [SerializeField] private ObjectPool motherShipObjectPool;
     public GameObject bulletPrefab;
     [SerializeField] Player _playerSc;
     private float width;
@@ -20,6 +21,12 @@ public class AlienMaster : MonoBehaviour
     private float moveTime = 0.005f;
     private float shootTimer = 3f;
     private const float ShootTime = 3f;
+
+    public GameObject motherShipPrefab;
+    private Vector3 motherShipSpawnPos = new Vector3(6,6.5f,0);
+    private float motherShipTimer = 5f;
+    private const float MOTHERSHIP_MIN = 15f;
+    private const float MOTHERSHIP_MAX = 60f;
 
     void Start()
     {
@@ -41,8 +48,13 @@ public class AlienMaster : MonoBehaviour
         {
             Shoot();
         }
+        if (motherShipTimer <= 0)
+        {
+            SpawnMotherShip();
+        }
         moveTimer -= Time.deltaTime;
         shootTimer -= Time.deltaTime;
+        motherShipTimer -= Time.deltaTime;
     }
 
     private void Shoot()
@@ -82,6 +94,13 @@ public class AlienMaster : MonoBehaviour
             movingRight = !movingRight;
         }
         moveTimer = GetMovedSpeed();
+    }
+
+    private void SpawnMotherShip()
+    {
+        GameObject obj = motherShipObjectPool.GetPoolObject();
+        obj.transform.position = motherShipSpawnPos;
+        motherShipTimer = UnityEngine.Random.Range(MOTHERSHIP_MIN, MOTHERSHIP_MAX);
     }
 
     private float GetMovedSpeed()
