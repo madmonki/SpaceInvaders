@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 8626084411949270690}
   - component: {fileID: 2571884642780243374}
   - component: {fileID: 6298081823219711857}
+  - component: {fileID: 9220282898166733264}
+  - component: {fileID: -7232979510447883523}
+  - component: {fileID: 7503682065445407015}
   m_Layer: 0
   m_Name: InvaderProjectile_0
   m_TagString: Untagged
@@ -32,7 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8626084411949270690
 SpriteRenderer:
@@ -152,3 +155,55 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.18764144, y: 0.43845007}
   m_EdgeRadius: 0
+--- !u!50 &9220282898166733264
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83074293831566139}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &-7232979510447883523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83074293831566139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95d27f1115e0af1b9e47f55c2bef0b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletDeactivatePos: 8
+--- !u!114 &7503682065445407015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83074293831566139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af2a64e18ec6d937bf8fb0c012498e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

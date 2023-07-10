@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1245011727309084939}
   - component: {fileID: 1200218299628016050}
   - component: {fileID: 2646291317820393981}
+  - component: {fileID: 1828834639044171774}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: Untagged
@@ -191,3 +192,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 0}
   width: 0
+  objectPool: {fileID: 1828834639044171774}
+--- !u!114 &1828834639044171774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883807827782517124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f0405cdabc5bd8f931aacbb7742dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPrefab: {fileID: 1413029006957810782, guid: 36999dfdaa1587339bb9dc0b9d9b01b6, type: 3}
+  poolSize: 5
