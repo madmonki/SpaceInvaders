@@ -30,22 +30,33 @@ public class UIManager : MonoBehaviour
 
     public static void UpdateLives(int lives)
     {
+        foreach (Image i in instance.lifeSprites)
+            i.color = instance.inactive;
+        
+        for (int i = 0; i < lives; i++)
+            instance.lifeSprites[i].color = instance.active;
+    }
 
+    public static void UpdateHealthBar(int healt)
+    {
+        instance.healthBar.sprite = instance.healthBars[healt];
     }
 
     public static void UpdateScore(int score)
     {
-
+        instance.score += score;
+        instance.scoreText.text = instance.score.ToString("000,000");
     }
 
-    public static void UpdateHighScore()
+    public static void UpdateHighScore(int score)
     {
 
     }
 
     public static void UpdateWave()
     {
-        
+        instance.wave++;
+        instance.waveText.text = instance.wave.ToString();
     }
 
     public static void UpdateCoins()
