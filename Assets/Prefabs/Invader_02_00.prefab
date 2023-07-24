@@ -165,5 +165,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f4558bf445771e1859e59a71e2e676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 0
+  scoreValue: 125
   explosion: {fileID: 1920170291376477665, guid: 635eb6d985755a03ab7a4cafb3b52741, type: 3}
+  coinPrefab: {fileID: 8923954112218292191, guid: 50a907fbf51816d05a7718b42b36d171, type: 3}
+  lifePrefab: {fileID: 5032042146519285534, guid: bf1a2b8116e120876a622e0e87f00008, type: 3}
+  healthPrefab: {fileID: 1288194437156170976, guid: b0de10e92e239c6738c17bc437073ed5, type: 3}

@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        SpawnWave();
+        SpawnNewWave();
     }
 
     public static void SpawnNewWave()
