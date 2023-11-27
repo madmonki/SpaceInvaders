@@ -1,5 +1,3 @@
 # Space Invaders Clone
 
-1978 Space Invaders clone.
-
-[Youtube](https://youtu.be/1qPwmLAN5Oc)
+Demo [link](https://youtu.be/1qPwmLAN5Oc)
